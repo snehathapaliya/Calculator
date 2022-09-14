@@ -17,7 +17,7 @@ body {
   background-color: var(--light);
 }
 
-.App {
+.fi-App {
   display: flex;
   min-height: 100vh;
   align-items: center;
@@ -25,7 +25,7 @@ body {
   padding: 16px;
 }
 
-.calculator{
+.fi-calculator{
   width:100%;
   max-width: 400px;
   background-color: #fff;
@@ -34,7 +34,7 @@ body {
   box-shadow: 0px 2px 64px rgba(0,0,0,0.2)
 }
 
-.display{
+.fi-display{
   padding: 16px;
   text-align: right;
   background-color: var(--dark);
@@ -43,7 +43,7 @@ body {
   font-weight: 300;
 }
 
-.display span{
+.fi-display span{
   font-size: 14px;
   color: #888;
 }
@@ -63,22 +63,22 @@ button hover {
   opacity: 0.9;
 }
 
-.operators {
+.fi-operators {
   display: flex;
 }
 
-.operators button {
+.fi-operators button {
   flex: 1 1 0%;
   background-color: var(--primary);
   font-weight: 700;
 }
 
-.digits {
+.fi-digits {
   display: flex;
   flex-wrap: wrap;
 }
 
-.digits button {
+.fi-digits button {
   flex: 1 1 33.333%;
   max-width: 33.333%;
   background-color: var(--dark);
