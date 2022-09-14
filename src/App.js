@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div classnmame="Calculator">
+        <div className="Display">
+          {result ? <span>({result})</span>: ''}&nbsp;
+          { cal || "0" }
+        </div>
+        <div className="operators">
+          <button onClick={()=> updatecal('/')}>/</button>
+          <button onClick={()=> updatecal('*')}>*</button>
+          <button onClick={()=> updatecal('+')}>+</button>
+          <button onClick={()=> updatecal('-')}>-</button>
+          <button onClick={deletelast}>Del</button>
+        </div>
+        <div className="digits">
+          { createDigits() }
+        <button onClick={()=> updatecal('0')}>0</button>
+        <button onClick={()=> updatecal('.')}>.</button>
+        <button onClick={calculate}>=</button>
+        </div>
+      </div>
     </div>
   );
 }
+
 
 export default App;
